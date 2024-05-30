@@ -26,6 +26,15 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="http" android:host="go.idarmon.uz" />
                 <data android:scheme="https" />
+                <!-- exact path value must be "/login/" -->
+                <data android:path="/red/" />
+                <data android:path="/blue/" />
+
+                <!-- path must start with "/product/" and then it can contain any number of characters; in this case, it would probably be a product ID. -->
+                <data android:pathPattern="/blue/:id" />
+
+                <!-- path must start with /account/, so it may be /account/confirm, /account/verify etc. -->
+                <data android:pathPrefix="/account/" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
