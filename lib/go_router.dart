@@ -1,5 +1,6 @@
 import 'package:deeplinking_example/blue_page.dart';
 import 'package:deeplinking_example/home.dart';
+import 'package:deeplinking_example/product.dart';
 import 'package:deeplinking_example/red_page.dart';
 import 'package:go_router/go_router.dart';
 
@@ -17,5 +18,13 @@ final goRouter = GoRouter(
       path: '/red',
       builder: (context, state) => const RedPage(),
     ),
+    GoRoute(
+        path: '/product/:id',
+        builder: (context, state) {
+          final id = state.pathParameters['id'];
+          return Product(
+            id: "$id",
+          );
+        }),
   ],
 );

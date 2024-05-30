@@ -31,7 +31,7 @@
                 <data android:path="/blue/" />
 
                 <!-- path must start with "/product/" and then it can contain any number of characters; in this case, it would probably be a product ID. -->
-                <data android:pathPattern="/blue/:id" />
+                <data android:pathPattern="/product/.*" />
 
                 <!-- path must start with /account/, so it may be /account/confirm, /account/verify etc. -->
                 <data android:pathPrefix="/account/" />
