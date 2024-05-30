@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target" :
+      {
+        "namespace": "com.example.deeplinking_example",
+        "package_name": "com.example.deeplinking_example",
+        "sha256_cert_fingerprints": [
+          "66:94:BB:03:7F:8C:0D:8B:BE:0B:55:BC:62:F4:C5:3C:FF:CA:7F:BD:C4:9D:1D:D5:8C:2C:CC:AD:FA:77:B0:5D"
+        ]
+      }
+  }
+]
