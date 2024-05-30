@@ -29,12 +29,14 @@
                 <!-- exact path value must be "/login/" -->
                 <data android:path="/red/" />
                 <data android:path="/blue/" />
+                <data android:path="/home/" />
 
                 <!-- path must start with "/product/" and then it can contain any number of characters; in this case, it would probably be a product ID. -->
                 <data android:pathPattern="/product/.*" />
+                <data android:pathPattern="/detail/.*" />
 
                 <!-- path must start with /account/, so it may be /account/confirm, /account/verify etc. -->
-                <data android:pathPrefix="/account/" />
+                <data android:pathPrefix="/home/detail/.*" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
